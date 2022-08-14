@@ -1,4 +1,59 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-console.log(galleryItems);
+//* Задача №1
+
+// const itemsEl = document.querySelectorAll('.item');
+// console.log('Number of categories:', itemsEl);
+
+// const categoriesNameEl = document.querySelector('#categories');
+// console.log(categoriesNameEl.textContent);
+
+
+//* Задача №2
+
+// const ingredients = [
+//   "Potatoes",
+//   "Mushrooms",
+//   "Garlic",
+//   "Tomatos",
+//   "Herbs",
+//   "Condiments",
+// ];
+
+// const ingredientsEl = document.querySelector('#ingredients');
+// const elements = ingredients.map(option => {
+//     const itemEl = document.createElement('li');
+//     itemEl.classList.add('item');
+//     itemEl.textContent = option;
+
+//     return itemEl;
+// });
+
+// ingredientsEl.append(...elements);
+// console.log(ingredientsEl);
+
+
+//* Задача №3
+
+const images = [
+  {
+    url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
+    alt: "White and Black Long Fur Cat",
+  },
+  {
+    url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",
+    alt: "Orange and White Koi Fish Near Yellow Koi Fish",
+  },
+  {
+    url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",
+    alt: "Group of Horses Running",
+  },
+];
+const imegesEl = document.querySelector('.gallery');
+imegesEl.url = images.url;
+imegesEl.alt = images.alt;
+
+console.log(imegesEl)
+
+
