@@ -50,10 +50,22 @@ const images = [
     alt: "Group of Horses Running",
   },
 ];
-const imegesEl = document.querySelector('.gallery');
-imegesEl.url = images.url;
-imegesEl.alt = images.alt;
 
-console.log(imegesEl)
+const itemsImgEl = document.querySelector('.gallery');
 
+const itemsImg = ({ url, alt }) => {
+    const itemsEl = document.createElement('li');
+    
 
+    const imagesEl = document.createElement('img');
+    imagesEl.url = "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260";
+    imagesEl.alt = "White and Black Long Fur Cat";
+  
+  itemsEl.append(url, alt);
+  return itemsEl;
+    
+}
+
+const elements = images.map(itemsImg);
+console.log(elements);
+itemsImgEl.append(...elements);
