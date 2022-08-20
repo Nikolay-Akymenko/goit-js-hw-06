@@ -53,14 +53,59 @@ const images = [
   },
 ];
 
+//? <ul class="gallery"></ul>
+ 
+// const imagesItemEl = document.createElement('li');
+
+// const imagesEl = document.createElement('img');
+// imagesEl.src = ${ images.url };
+// imagesEl.alt = ${ images.alt };
+
+
+
+// imagesItemEl.appendChild(imagesEl)
+
+// const galleryEl = document.querySelector('.gallery');
+// galleryEl.appendChild(imagesItemEl);
+
+// console.log(galleryEl);
+
 for (const image of images) {
-    const galleryEl = document.querySelector('.gallery');
-    
-    galleryEl.insertAdjacentHTML('afterbegin',
-        `<li><img src='${image.url}' alt='${image.alt}'></li>`
-    )
-    
+  const galleryEl = document.querySelector('.gallery');
+
+  galleryEl.insertAdjacentHTML(
+    "afterbegin",
+    `<li><img src= "${image.url}" alt="${image.alt}"></li>`
+  )
 }
+console.log(images);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// for (const image of images) {
+//   const galleryEl = document.querySelector('.gallery');
+  
+    
+//     galleryEl.insertAdjacentHTML('afterbegin',
+//         `<li><img src='${image.url}' alt='${image.alt}'></li>`
+//     )
+    
+// }
 
 
 
