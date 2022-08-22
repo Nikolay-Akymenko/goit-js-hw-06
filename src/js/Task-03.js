@@ -18,18 +18,12 @@ const images = [
  
 const galleryEl = document.querySelector(".gallery");
 console.log(galleryEl);
+// galleryEl.classList.add("gallery-item");
 
 const elements = images
-  .map((image) => `<li><img src="${image.url}" alt="${image.alt}"></li>`)
+  .map((image) => `<li class="gallery-item"><img src="${image.url}" alt="${image.alt}"></li>`)
   .join("");
 
-images.style.cssText = `
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: space-between;
-width.img: 200px;
-`  
 
 galleryEl.insertAdjacentHTML("beforeend", elements);
 
